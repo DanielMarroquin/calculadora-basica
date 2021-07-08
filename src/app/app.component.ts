@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @Component({
   selector: 'app-root',
@@ -6,11 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Aplicacion Calculadora';
+  title = 'Aplicación Calculadora';
 
-  resultado: number = 0;
+  resultadoPadre: number = 0;
   procesarResultado(resultado: number){
-    this.resultado = resultado;
+    this.resultadoPadre = resultado;
   }
 
 }
